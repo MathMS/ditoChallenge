@@ -47,7 +47,7 @@ Para esse desafio eu interpretei de duas formas diferentes o enunciado, pelo mot
 |-------|-------|
 |Mediana = 1.0|Mediana = 2.7
 |Arquivo = desafio01_pt2 - Forma 1|Arquivo = desafio01_pt2 - Forma 2
-####Forma 1 - Cosiderando mais de uma compra por dia
+#### Forma 1 - Cosiderando mais de uma compra por dia
 Essa primeira forma não é a que eu acho que interpreta o enunciado.
 
 - O primeiro passo a ser feito foi selecionar o ID de todos os usuários que compraram algo, idependente de quanto compraram;
@@ -55,7 +55,7 @@ Essa primeira forma não é a que eu acho que interpreta o enunciado.
 - Após isso realizei um ``COUNT`` de quantas vezes a pessoa fez compras nesse intervalo de tempo dela. Depois fiz a divisão do número do intervalo de dias pelas compras;
 - No final eu tinha a média de todos os usuários, após isso eu apenas peguei a mediana utilzando o ``APPROX_QUANTILES(media,1000)[OFFSET(500)]``.
 
-####Forma 2 - Cosiderando apenas os dias (sem quantidade)
+#### Forma 2 - Cosiderando apenas os dias (sem quantidade)
 
 Essa forma é a que eu acho que interpreta melhor o enunciado.
 
@@ -137,12 +137,11 @@ de abertura:
 
 ![](./Imagens/horasMaiorTaxa.PNG)
 
-####Conclusão Final - Desafio 02
+#### Conclusão Final - Desafio 02
 
 Sobre o STO, é algo que realmente é preciso, a taxa de abertura realmente é importante, depois de analisar os dados,
 é preciso pensar em uma forma de implementar isso que maximize a taxa de abertura. Uma forma de podermos implementarmos isso, acho que a mais válida, seria com machine learning.
 Onde estudaríamos o perfil do usuário, inicialmente lançando ele em um padrão da maioria, para aumentar as chances de acertarmos 
 de primeira a melhor hora pra ele. E a partir disso, sempre estarmos de acordo com o comportamento do usuário.
-
 Quanto mais e-mails enviarmos, mais usuários termos cadastrados para o STO, mais preciso vai estar nosso método
 da maximização da taxa de abertura.
