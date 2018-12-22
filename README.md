@@ -66,7 +66,7 @@ Eu consegui reutilizar boa parte da primeira forma, basicamente nessa forma eu n
 - Por isso tive que criar 2 ``SELECT``'s, um para converter o timestamp em data, pois pode ter pedidos no mesmo dia e em horários diferente, e um ``SELECT`` apenas para realizar o ``COUNT`
 - Com isso eu tinha a média de todos os usuários, após disso foi só eu ter pego a mediana.
 
-##Desafio 02 
+## Desafio 02 
 
 Para esse desafio eu utilizei o ``pyhton`` com a importação da biblioteca ``csv``.
 Para inicializar o trabalho eu importei a tabela para visualizar as colunas:
